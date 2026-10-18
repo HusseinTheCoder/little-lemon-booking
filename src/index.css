@@ -1,0 +1,183 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 8%;
+  background: #ffffff;
+}
+
+.header h1 {
+  margin: 0;
+  color: #495e57;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8a6d00;
+}
+
+nav a:focus-visible,
+.button:focus-visible,
+button:focus-visible {
+  outline: 3px solid #495e57;
+  outline-offset: 4px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 55px 8%;
+  background: #495e57;
+  color: #ffffff;
+}
+
+.hero h2 {
+  margin: 0;
+  color: #f4ce14;
+  font-size: 48px;
+}
+
+.hero h3 {
+  margin-top: 8px;
+  font-size: 26px;
+}
+
+.hero p {
+  max-width: 450px;
+  line-height: 1.7;
+}
+
+.button,
+button {
+  display: inline-block;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #f4ce14;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+  background: #e5bd00;
+}
+
+.about {
+  padding: 45px 8%;
+  text-align: center;
+}
+
+.about h2,
+.booking h2 {
+  color: #495e57;
+}
+
+.about p {
+  line-height: 1.7;
+}
+
+.booking {
+  padding: 45px 20px 60px;
+  background: #f5f5ef;
+  text-align: center;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 25px auto 0;
+  padding: 28px;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: left;
+  box-shadow: 0 4px 18px #00000012;
+}
+
+.booking label {
+  font-weight: bold;
+}
+
+.booking input,
+.booking select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid #777777;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #222222;
+  font: inherit;
+}
+
+.booking button {
+  margin-top: 10px;
+}
+
+footer {
+  padding: 24px;
+  background: #495e57;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+
+  .about {
+    padding: 35px 24px;
+  }
+}
